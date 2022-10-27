@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --org-clr:  hsl(31, 77%, 52%);
+  --dcyan-clr: hsl(184, 100%, 22%);
+  --vdcyan-clr: hsl(179, 100%, 13%);
+  --trprntwhite-clr: hsla(0, 0%, 100%, 0.75);
+  --vlgray-clr: hsl(0, 0%, 95%);
+  --bdr-rads: 10px;
+  --btnbdr-rads: 20px;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set root elemet font size */
+html {
+  font-size: 10px;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  background-color: var(--vlgray-clr);
+  min-height: 100vh;
+  min-width: 100vw;
+  text-rendering: optimizeSpeed;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: 'lexend-deca', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+                          /* flex-layout Task starts */
+
+
+.out-container {
+  margin: 50px auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: var(--bdr-rads);
+  color: var(--trprntwhite-clr);
+  font-family: 'lexend-deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* 1st inner container */
+.in-div {
+  flex: 1;
+  padding: 40px; 
+  position: relative;
+}
+
+.org-clr {
+  background-color: var(--org-clr);
+  border-bottom-left-radius: var(--bdr-rads);
+  border-top-left-radius: var(--bdr-rads);
+}
+
+.dcyan-clr {
+  background-color: var(--dcyan-clr);
+}
+
+.vdcyan-clr {
+  background-color: var(--vdcyan-clr);
+  border-bottom-right-radius: var(--bdr-rads);
+  border-top-right-radius: var(--bdr-rads);
+}
+
+.cars {
+  width: 55px
+}
+
+h1, a {
+  color: var(--vlgray-clr);
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+h1 {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  font-family: 'Big Shoulders Display', cursive, sans-serif;
+  font-weight: 700;
+}
+
+p {
+  line-height: 23px;
+  margin-bottom: 110px;
+  max-width: 192px;
+  min-width: 90px;
+}
+
+a {
+  border: 2px solid var(--vlgray-clr);
+  border-radius: var(--btnbdr-rads);
+  padding: 8px 20px; 
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+  font-size: 16px;
+}
+
+a:active {
+  opacity: 0.7;
+}
+
+
+@media screen and (max-width: 375px) {
+  .out-container {
+   min-width: 150px;
+   flex-direction: column;
+  }
+  
+.in-div {
+  border-radius: var(--bdr-rads);
+  padding: 30px;
+  } 
+  
+button {
+  padding: 8px 15px; 
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 500px) {
+  
+.out-container {
+  max-width: 272px;
+  flex-direction: column;
+  }
+  
+  .in-div {
+  border-radius: var(--bdr-rads);
+  } 
+
+  button {
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  }
+}
+
+/* 2nd inner container */
+
+.notf-cont {
+  padding: 10px 0px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.notification {
+  white-space: nowrap;
+}
+
+.notification span {
+  color: blue;
+   font-weight: 600;
+}
+
+
+
+
+
