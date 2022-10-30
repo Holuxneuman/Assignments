@@ -42,6 +42,6 @@ Start the server
 Git is a version control system.
 
 
-## Skills
+## 🛠 Skills
 
 HTML, CSS, JavaScript..
