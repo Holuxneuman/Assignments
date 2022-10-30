@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>loginpage</title>
+  <link href="loginpage.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Login Page</h1>
+    <p>App helps you connect and share with the people in your life.</p>
+  </header>
+
+  <fieldset>
+    <form action="#">
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" placeholder="e.g example@email.com" required><br>
+      <label for="pwrd">Password:</label><br>
+      <input type="password" name="pwrd" id="pwrd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters."
+        required>
+      <button type="submit" id="login">Log in</button>
+      <p id="f_pwrd"><a href="nopassword.com">Forgotten password?</a></p>
+      <hr>
+    </form>
+    <a id="signup_bttn" href="signuppage.html">Don't have an account?<span>Sign
+          up</span></a>
+  </fieldset>
+
+</body>
+
+</html>
