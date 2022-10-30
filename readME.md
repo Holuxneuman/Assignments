@@ -1,6 +1,6 @@
 # WEEK 4 TASKS
 
-Week 4 tasks by Holuxneuman. Tasks consists of flex and grid layout project
+Week 4 tasks by Holuxneuman. Tasks consists of flex and grid layout projects.
 
 ## Run Locally
 
